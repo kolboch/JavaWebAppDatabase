@@ -41,7 +41,12 @@ public class UserInfo extends HttpServlet {
 		out.println("<p id='greenText'>Request URI: " + request.getRequestURI() + "</p>");
 		out.println("<p id='blueText'>Request remoteHost: " + request.getRemoteHost() + "</p>");
 		out.println("<p id='greenText'>Request URL: " + request.getRequestURL() + "</p>");
+		out.println("<p id='redText'>Method http: " + request.getMethod() + "</p>");
+		out.println("<br>This is image:<br>");
+		out.println("<img src='./images/log.jpg' height='50' width='50'>");
 		out.println("</body></html>");
+		out.println("<br>");
+		out.println("Clickbait: <a href='http://google.com'>BAIT</a>");
 	}
 
 	/**
