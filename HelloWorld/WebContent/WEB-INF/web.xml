@@ -3,8 +3,8 @@
   <display-name>HelloWorld</display-name>
   
   <servlet>
-  <servlet-name>WELCOME</servlet-name>
-  <servlet-class>test.Hello</servlet-class>
+  	<servlet-name>WELCOME</servlet-name>
+  	<servlet-class>test.Hello</servlet-class>
   </servlet>
   
   <servlet-mapping>
