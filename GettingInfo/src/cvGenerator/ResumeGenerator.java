@@ -38,18 +38,22 @@ public class ResumeGenerator extends HttpServlet {
 		out.println("<p style='text-align:center; font-size: 35px; color:black;'>RESUME</p><hr>");
 		out.println("<p style='font-size: 25px; color:black;'>Languages I CAN: </p>");
 		out.println(printLanguages(languages));
-		out.println("This text should has different color or size");
+		out.println("<hr>");
+		out.println("<p style='font-size: 25px; color:black;'>About ME :) </p>");
+		out.println(request.getParameter("aboutSection"));
+		out.println("<hr>");
 		out.println("</body></html>");
 		
 	}
 	private String printLanguages(String languagesInput){
 		StringBuilder builder = new StringBuilder("<ul>");
-		String regex ="(.*)[\n|\r]?";
+		String regex ="(.*)[\\s]*";
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(languagesInput);
 		while(m.find()){
-				System.out.println(m.group());
-				builder.append("<li>" + m.group() + "</li>");
+				if(m.group() != null && !m.group().matches("\\s*")){
+					builder.append("<li>" + m.group() + "</li>");
+				}
 		}
 		builder.append("</ul>");
 		return builder.toString();
