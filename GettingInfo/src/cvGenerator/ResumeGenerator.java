@@ -40,7 +40,7 @@ public class ResumeGenerator extends HttpServlet {
 		out.println(printLanguages(languages));
 		out.println("<hr>");
 		out.println("<p style='font-size: 25px; color:black;'>About ME :) </p>");
-		out.println(request.getParameter("aboutSection"));
+		out.println(filters.SpecialCharFilter.filterAndReplace(request.getParameter("aboutSection")));
 		out.println("<hr>");
 		out.println("</body></html>");
 		
