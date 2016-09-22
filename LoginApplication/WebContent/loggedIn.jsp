@@ -9,9 +9,9 @@
 </head>
 <body>
 	<h3>Successfully logged in!</h3>
-	<%
-		User user = (User)request.getAttribute("user");
-	%>
-	Hello <%= user.getUserName() %>
+	<jsp:useBean id="user" class="dto.User" scope="request">
+		<jsp:setProperty property="userName" name="user" value="Noname"></jsp:setProperty>
+	</jsp:useBean>
+	Hello <jsp:getProperty property="userName" name="user"/>!
 </body>
 </html>
