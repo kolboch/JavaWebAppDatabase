@@ -28,5 +28,10 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/pobrane/maven libs/commons-dbutils-1.6-bin/commons-dbutils-1.6/commons-dbutils-1.6.jar" sourcepath="D:/pobrane/maven libs/commons-dbutils-1.6-src">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
