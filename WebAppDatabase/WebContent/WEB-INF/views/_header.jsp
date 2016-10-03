@@ -8,8 +8,13 @@
 </head>
 <body>
 
-	<div id="header" class="centerd">
+	<div id="header" class="centered">
 		<h2>Web App database</h2>
+	</div>
+	<div id="rightHeader">
+		Hello <b>${loginedUser.userName}</b>
+		<br/>
+		Search: <input type="text" name="search">
 	</div>
 
 </body>

@@ -20,7 +20,7 @@ public class MySqlConnectionUtils {
 		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn = DriverManager.getConnection(connectionURL, userName, password); // here error occured
+			Connection conn = DriverManager.getConnection(connectionURL, userName, password);
 			return conn;
 		}
 		catch(SQLException | ClassNotFoundException e){
