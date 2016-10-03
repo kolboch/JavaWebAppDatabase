@@ -17,7 +17,15 @@ public class MySqlConnectionUtils {
 	public static Connection getMySqlConnection(String hostName, String dbName,
 			String userName, String password) throws SQLException{
 		String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName; 
-		Connection conn = DriverManager.getConnection(connectionURL, userName, password);
-		return conn;
+		
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn = DriverManager.getConnection(connectionURL, userName, password); // here error occured
+			return conn;
+		}
+		catch(SQLException | ClassNotFoundException e){
+			e.printStackTrace();
+		}
+		return null;
 	}
 }
