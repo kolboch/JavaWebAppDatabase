@@ -24,7 +24,6 @@ public class ConnectionUtils {
 			}
 		}
 		catch(SQLException e){
-			
 		}
 	}
 	
