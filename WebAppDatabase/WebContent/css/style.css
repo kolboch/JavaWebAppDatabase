@@ -3,18 +3,55 @@ body{
 	color: #34675C;
 }
 
+form{
+	display: table;
+}
+
+p{
+	display: table-row;
+}
+
+label{
+	display: table-cell;
+}
+
+input{
+	display: table-cell;
+}
+
 #header{
 	color:white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 #rightHeader{
+	padding-right: 5px;
 	text-align: right;
 	color: black;
 }
 
 #menu{
 	padding: 10px;
-	
+	text-decoration:none;	
+}
+
+#menu a:ling, a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+#menu a:active, a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+.container{
+	margin-right:5px;
+	margin-left:5px;
+	padding: 5px;
+	line-height: 110%;
 }
 
 .menuOption{
@@ -26,17 +63,18 @@ body{
 }
 
 #footer{
-	background-color: #38c78d;
+	background-color: #5abe83;
+	color: white;
+	width: auto;
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#footer p{
+	display: inline; 
 }
 
 .centered{
 	text-align: center;
-	position: relative;	
-}
-.centered p{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
