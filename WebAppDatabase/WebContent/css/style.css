@@ -12,6 +12,31 @@ body{
 	color: black;
 }
 
+#menu{
+	padding: 10px;
+	
+}
+
+.menuOption{
+	
+}
+
+.menuOption:hover, .menuOption:active{
+	color: orange;
+}
+
+#footer{
+	background-color: #38c78d;
+}
+
 .centered{
-	text-align: center;	
+	text-align: center;
+	position: relative;	
+}
+.centered p{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
