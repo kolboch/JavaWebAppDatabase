@@ -1,4 +1,4 @@
-package conn;
+package connUtils;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -12,7 +12,7 @@
 	<jsp:include page="_menu.jsp"></jsp:include>
 	<div class="container">	
 		<h4>Log in to access data</h4>
-		<form>
+		<form method="post" action="doLogin">
 			<p>
 				<label for="log">login:</label>
 				<input id="log" type="text" name="login"> <br/>

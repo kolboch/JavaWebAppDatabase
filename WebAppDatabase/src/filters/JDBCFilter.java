@@ -16,7 +16,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-import conn.ConnectionUtils;
+import connUtils.ConnectionUtils;
 import utils.CookieUtils;
 
 @WebFilter(filterName = "JDBCFilter", urlPatterns = { "/*" })
