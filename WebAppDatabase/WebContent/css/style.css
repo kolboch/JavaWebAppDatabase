@@ -47,6 +47,10 @@ input{
 	color:white;
 }
 
+.error{
+	color:red;
+}
+
 .container{
 	margin-right:5px;
 	margin-left:5px;

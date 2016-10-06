@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 
 <div id="menu" class="centered">
-	<a href="login">Link 1</a> ||
-	<a href="#">Link 2</a> ||
+	<a href="login">Login</a> ||
+	<a href="userInfo">User info</a> ||
 	<a href="#">Link 3</a>
 </div>

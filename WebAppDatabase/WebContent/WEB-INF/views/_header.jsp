@@ -5,7 +5,7 @@
 		<h2>Web App database</h2>
 	</div>
 	<div id="rightHeader">
-		Hello <b>${loginedUser.userName}</b>
+		Hello <b>${loginedUser.user_name}</b>
 		<br/>
 		Search: <input type="text" name="search">
 	</div>

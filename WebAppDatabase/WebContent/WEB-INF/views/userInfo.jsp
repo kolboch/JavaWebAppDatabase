@@ -4,30 +4,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login page</title>
+<title>Web App user info</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>
-	<div class="container">	
-		<p class="error">${errorMessage}</p>
-		<h4>Log in to access data</h4>
-		<form method="post" action="doLogin">
-			<p>
-				<label for="log">login:</label>
-				<input id="log" type="text" name="login"> <br/>
-			</p>
-			<p>
-				<label for="pass">password:</label>
-				<input id="pass" type="password" name="password"> <br/>
-			</p>
-			<p>
-				<label></label>
-				<input type="submit" value="Submit">
-			</p>
-		</form>
-	</div>
+	
+	<h3>Hello ${user.user_name}</h3>
+	<br/>
+	<table>
+		<tr>
+			<td>user name:</td>
+			<td>${user.user_name}</td>
+		</tr>
+		<tr>
+			<td>gender:</td>
+			<td>${user.gender}</td>
+		</tr>
+	</table>
 	<jsp:include page="_footer.jsp"></jsp:include>
 </body>
 </html>
