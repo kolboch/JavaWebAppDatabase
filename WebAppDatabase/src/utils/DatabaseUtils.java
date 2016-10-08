@@ -112,8 +112,9 @@ public class DatabaseUtils {
 	}
 	
 	public static void deleteProduct(Connection conn, String code) throws SQLException{
-		String query = "DELETE FROM "+ PRODUCT_TABLE_NAME +" a WHERE a.code = ?";
+		String query = "DELETE FROM "+ PRODUCT_TABLE_NAME +" WHERE code = ?";
 		PreparedStatement prStmt = conn.prepareStatement(query);
+		System.out.println(query + " " + code);
 		prStmt.setString(1, code);
 		prStmt.executeUpdate();
 	}

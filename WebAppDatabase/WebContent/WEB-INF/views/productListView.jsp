@@ -26,10 +26,12 @@
 				<td>${product.code}</td>
 				<td>${product.name}</td>
 				<td>${product.price}</td>
-				<td><form action="editProduct?code=${product.code}">
+				<td><form action="editProduct">
+					<input type="hidden" name="code" value="${product.code }">
 					<input type="submit" value="edit">
 				</form></td>
-				<td><form action="deleteProduct?code=${product.code}">
+				<td><form action="deleteProduct">
+					<input type="hidden" name="code" value="${product.code }">
 					<input type="submit" value="delete">
 				</form></td>
 			</tr>
