@@ -47,8 +47,26 @@ input{
 	color:white;
 }
 
+#footer{
+	background-color: #5abe83;
+	color: white;
+	width: auto;
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#footer p{
+	display: inline; 
+}
+
 .error{
 	color:red;
+}
+
+.centerDiv{
+	display: table;
+	margin: 0 auto;
 }
 
 .container{
@@ -64,19 +82,6 @@ input{
 
 .menuOption:hover, .menuOption:active{
 	color: orange;
-}
-
-#footer{
-	background-color: #5abe83;
-	color: white;
-	width: auto;
-	padding: 5px;
-	margin-top: 10px;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-#footer p{
-	display: inline; 
 }
 
 .centered{

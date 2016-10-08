@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login page</title>
+<title>WebApp Login page</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -21,6 +21,10 @@
 			<p>
 				<label for="pass">password:</label>
 				<input id="pass" type="password" name="password"> <br/>
+			</p>
+			<p>
+				<label for="remember">Remember me!</label>
+				<input id="remember" type="checkbox" name="remember" value="Y">
 			</p>
 			<p>
 				<label></label>

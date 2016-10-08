@@ -65,6 +65,9 @@ public class DoLoginServlet extends HttpServlet {
 		else{
 			HttpSession session = request.getSession();
 			CookieUtils.storeLoginedUser(session, user);
+			if(request.getParameter("remember").equals("Y")){
+				CookieUtils.storeUserCookie(response, user);
+			}
 			response.sendRedirect(request.getContextPath() + "/userInfo");
 		}
 	}

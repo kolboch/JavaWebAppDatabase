@@ -34,7 +34,9 @@ public class UserInfoServlet extends HttpServlet {
 		
 		User_account user = CookieUtils.getStoredLoginedUser(session);
 		if(user == null){
-			response.sendRedirect(request.getContextPath() + "/login");
+			request.setAttribute("errorMessage", "Log in to view user info!");
+			RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/login");
+			dispatcher.forward(request, response);
 			return;
 		}
 		request.setAttribute("user", user);
